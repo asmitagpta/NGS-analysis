@@ -1,9 +1,16 @@
+# An R script to generate heatmap for genes showing copy number changes for differentially expressed upregulated or downregulated genes. Copy number changes for these genes were taken from cBioportal database. 
+# The two source .csv files used as input are provided for reference in the folder /data
+
+
+
 library(ggplot2)
 require(reshape2)
 
-f <- read.csv("heatmap_cna_sabri_up_genes.csv", sep = "\t")
-f2 <- read.csv("heatmap_cna_sabri_down_genes.csv", sep = "\t")
+ # Read copy number data for up/down regulated genes
+f <- read.csv("heatmap_cna_sabri_up_genes.csv", sep = "\t")      
+f2 <- read.csv("heatmap_cna_sabri_down_genes.csv", sep = "\t")    
 
+# assign gene names as row headers
 row_head <- f[,2]
 rownames(f) <- row_head
 f[,1:2] <- NULL
