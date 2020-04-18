@@ -1,6 +1,5 @@
 # NGS-analysis-codes
-All codes in R/Python written for custom NGS analysis
+This repository contains miscellaneous scripts and tools for performing analysis on next generation sequencing data.
 
-Many of the specified paths are hard coded. So the user might have to tweak them according to the location of their files
+As a beginner in the field of bioinformatics, many of the specified paths are hard coded. So the user might have to tweak them according to the location of their files
 
-Detailed description of each code is on its way..
